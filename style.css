@@ -52,11 +52,32 @@ body {
         font-family: "Six Caps", sans-serif;
         letter-spacing: 30px;
         font-weight: 300;
+        background: linear-gradient(45deg, #ff0000, #ffff00, #ff00f3, #66ff00, #16bffd, #a80077, #ff0000);
+        background-size: 400%;
+        color: #333;
+        padding: 10px;
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 5px transparent;
+        animation: animate 20s linear infinite;
     }
 
     h3 {
         font-family: "League Spartan", sans-serif;
         font-weight: 700;
+        background: linear-gradient(45deg, #f06, #4a90e2, #f06);  
+        background-size: 200% 200%;  
+        -webkit-background-clip: text;  
+        color: transparent;  
+        animation: animatedTextGradient 5s ease infinite;  
+    }
+}
+
+@keyframes animate  {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
     }
 }
 
@@ -69,6 +90,14 @@ body {
         font-size: 200px;
         font-family: "Oxanium", sans-serif;
         font-weight: 600;
+        background: linear-gradient(45deg, #ff0000, #ffff00, #ff00f3, #66ff00, #16bffd, #a80077, #ff0000);
+        background-size: 400%;
+        color: #333;
+        padding: 10px;
+        
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 10px transparent;
+        animation: animate 20s linear infinite;
     }
 
     h3 {
@@ -76,6 +105,8 @@ body {
         font-size: 60px;
         font-family: "League Spartan", sans-serif;
         font-weight: 600;
+
+        
     }
 
     .tt {
@@ -103,12 +134,27 @@ body {
         align-items: center;
         line-height: 100px;
 
+        position: relative;
+
         h1 {
             font-size: 150px;
             font-family: "Oxanium", sans-serif;
             font-weight: 600;
 
+            /* position: absolute;
+            color: #fff;
+            transform: translate(0%,-200%); */
         }
+
+        /* h1:nth-child(1) {
+            color: transparent;
+            -webkit-text-stroke: 2px #03a9f4;
+        }
+
+        h1:nth-child(2) {
+            color: #03a9f4;
+            animation: float 3s cubic-bezier(0.25, 0.1, 0.25, 1) infinite
+        } */
 
         h2 {
             justify-content: start;
@@ -120,6 +166,12 @@ body {
             line-height: 75px;
             position: relative;
             left: -25px;
+
+            background: linear-gradient(45deg, #ff0000, #ffff00, #66ff00, #16bffd, #a80077, #ff0000);  
+            background-size: 400%;  
+            -webkit-background-clip: text;  
+            color: transparent;  
+            animation: animatedTextGradient 10s ease infinite;  
         }
     }
 
@@ -127,6 +179,7 @@ body {
         width: 50vw;
         height: 100vh;
         overflow: hidden;
+        position: relative;
 
         img {
             position: relative;
@@ -134,7 +187,30 @@ body {
             height: 100vh;
         }
     }
+
+    .img::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: red;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        /* z-index: -1; */
+        padding: 10px;
+    }
 }
+
+/* @keyframes float {
+    0%,100% {
+        clip-path: polygon(0% 52%, 9% 45%, 25% 42%, 40% 46%, 51% 55%, 61% 58%, 74% 60%, 84% 57%, 95% 51%, 100% 46%, 100% 100%, 0% 100%);
+    }
+    50% {
+        clip-path: polygon(0% 38%, 11% 53%, 25% 60%, 41% 53%, 52% 39%, 62% 29%, 74% 23%, 87% 26%, 99% 34%, 100% 100%, 0% 100%);
+
+    }
+} */
 
 .slide4,
 .slide6,
@@ -174,8 +250,12 @@ body {
 
             h2 {
                 font-size: 50px;
-                /* color: #ffb9b9; */
-                /* text-shadow: 0 0 5px red, 0 0 20px red; */
+
+                background: linear-gradient(45deg, #ff0000, #ffff00, #66ff00, #16bffd, #a80077, #ff0000);  
+                background-size: 400%;  
+                -webkit-background-clip: text;  
+                color: transparent;  
+                animation: animatedTextGradient 10s ease infinite;  
             }
         }
 
@@ -262,7 +342,7 @@ body {
                 font-size: 120px;
                 text-shadow: 0 0 5px cyan, 0 0 20px cyan, 0 0 50px cyan;
                 padding-left: 80px;
-                margin-top: 20px;
+                margin-top: 20px; 
             }
         }
 
@@ -280,6 +360,7 @@ body {
         }
     }
 }
+ 
 
 .slide6 {
     flex-direction: row-reverse;
@@ -507,6 +588,7 @@ body {
             font-family: "Iceland", sans-serif;
             font-size: 80px;
             text-shadow: 0 0 5px orange, 0 0 20px orangered;
+            color: white;
             position: relative;
             left: 75px;
             margin-top: 20px;
