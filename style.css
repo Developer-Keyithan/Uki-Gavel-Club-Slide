@@ -1,13 +1,33 @@
 * {
     margin: 0;
     padding: 0;
+
+    --ffcomon:Arial, sans-serif;
+    --ffgavel:"Six Caps";
+    --ff1:"Poppins";
+    --ff2:"League Spartan";
+    --ff3:"Damion";
+    --ff4:"Offside";
+    --ff5:"Iceland";
+    --ff6: "Vibur";
+    --ff7:"Trade Winds";
+    --ff8:"Sriracha";
+    --ff9:"Poiret One";
+    --ff10:"Itim";
+    --ff11:"Delius";
+    --ff12:"Damion";
+    --ff13:"Allan";
 }
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: var(--ffcomon);
     overflow: hidden;
+    background: linear-gradient(45deg, cyan,darkblue);
+    animation: animate 10s 10s 0 infinite forwards linear;
 }
+
+
 
 .logo {
     position: fixed;
@@ -38,23 +58,23 @@ body {
     align-items: center;
     font-size: 2em;
     color: white;
-    background-color: #333;
+    background-size: 500%;
+    background-color: #0007;
+    backdrop-filter: blur(20px);
 }
 
 
-.slide1 {
+.slide1, .slide16 {
     flex-direction: column;
     justify-content: center;
-
-    /* background: url(); */
     h1 {
         font-size: 200px;
-        font-family: "Six Caps", sans-serif;
+        font-family: var(--ffgavel);
         letter-spacing: 30px;
         font-weight: 300;
-        background: linear-gradient(45deg, #ff0000, #ffff00, #ff00f3, #66ff00, #16bffd, #a80077, #ff0000);
+        background: linear-gradient(45deg, #ffff00, #ff00f3, #66ff00, #16bffd, #ffff00);
         background-size: 400%;
-        color: #333;
+        color: #0003;
         padding: 10px;
         -webkit-background-clip: text;
         -webkit-text-stroke: 5px transparent;
@@ -62,7 +82,7 @@ body {
     }
 
     h3 {
-        font-family: "League Spartan", sans-serif;
+        font-family:var(--ff2);
         font-weight: 700;
         background: linear-gradient(45deg, #f06, #4a90e2, #f06);  
         background-size: 200% 200%;  
@@ -84,15 +104,13 @@ body {
 .slide2 {
     flex-direction: column;
     justify-content: center;
-
-    /* background: url(); */
     h1 {
         font-size: 200px;
-        font-family: "Oxanium", sans-serif;
+        font-family: var(--ff1);
         font-weight: 600;
         background: linear-gradient(45deg, #ff0000, #ffff00, #ff00f3, #66ff00, #16bffd, #a80077, #ff0000);
         background-size: 400%;
-        color: #333;
+        color: #0003;
         padding: 10px;
         
         -webkit-background-clip: text;
@@ -103,19 +121,19 @@ body {
     h3 {
         position: relative;
         font-size: 60px;
-        font-family: "League Spartan", sans-serif;
+        font-family: var(--ff2);
         font-weight: 600;
 
         
     }
 
     .tt {
-        top: 50px;
-        left: -371px;
+        top: 110px;
+        left: -26px;
     }
 
     .sw {
-        top: -60px;
+        top: -80px;
         left: 184px;
     }
 
@@ -138,8 +156,9 @@ body {
 
         h1 {
             font-size: 150px;
-            font-family: "Oxanium", sans-serif;
-            font-weight: 600;
+            font-family: var(--ff3);
+            font-weight: 500;
+            letter-spacing: 20px;
 
             /* position: absolute;
             color: #fff;
@@ -160,7 +179,7 @@ body {
             justify-content: start;
             width: 800px;
             margin-top: 50px;
-            font-family: "League Spartan", sans-serif;
+            font-family:var(--ff2);
             font-weight: 500;
             font-size: 70px;
             line-height: 75px;
@@ -186,19 +205,6 @@ body {
             right: 100px;
             height: 100vh;
         }
-    }
-
-    .img::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: red;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        /* z-index: -1; */
-        padding: 10px;
     }
 }
 
@@ -239,13 +245,15 @@ body {
 
         h1 {
             font-size: 150px;
-            font-family: "Oxanium", sans-serif;
+            font-family: var(--ff3);
+            letter-spacing: 15px;
+            font-weight: 500;
             margin-bottom: -20px;
         }
 
         .head {
             h1 {
-                color: rgb(0, 188, 179);
+                color: #fff;
             }
 
             h2 {
@@ -300,18 +308,18 @@ body {
 
         h1 {
             font-size: 150px;
-            font-family: "League Spartan", sans-serif;
+            font-family:var(--ff2);
         }
 
         h3 {
             font-size: 80px;
-            font-family: "Oxanium", sans-serif;
+            font-family: var(--ff1);
         }
 
         h4 {
             font-size: 45px;
             width: 60vw;
-            font-family: "League Spartan", sans-serif;
+            font-family:var(--ff2);
         }
 
         .pron,
@@ -335,7 +343,7 @@ body {
         .wotd {
             position: fixed;
             top: 120px;
-            font-family: "Oxanium", sans-serif;
+            font-family: var(--ff1);
 
             h2 {
                 color: rgb(210, 255, 255);
@@ -391,7 +399,7 @@ body {
 
     h1,
     h3 {
-        font-family: "Oxanium", sans-serif;
+        font-family: var(--ff1);
     }
 
     h3 {
@@ -402,7 +410,7 @@ body {
     p {
         position: relative;
         left: 200px;
-        font-family: "League Spartan", sans-serif;
+        font-family:var(--ff2);
         font-size: 45px;
         font-weight: 600;
     }
@@ -413,7 +421,7 @@ body {
         left: 1082px;
         bottom: 42px;
         font-size: 45px;
-        font-family: "League Spartan", sans-serif;
+        font-family:var(--ff2);
         font-weight: 600;
     }
 
@@ -423,7 +431,7 @@ body {
         left: 1069px;
         bottom: 42px;
         font-size: 45px;
-        font-family: "League Spartan", sans-serif;
+        font-family:var(--ff2);
         font-weight: 600;
     }
 
@@ -443,7 +451,7 @@ body {
         left: 934px;
         bottom: 42px;
         font-size: 45px;
-        font-family: "League Spartan", sans-serif;
+        font-family:var(--ff2);
         font-weight: 600;
     }
 }
@@ -478,15 +486,31 @@ body {
 
     .s9-head {
         position: fixed;
-        top: 150px;
-        font-family: "Oxanium", sans-serif;
+        top: 650px;
+        font-family: var(--ff1);
+        font-size: 150px;
     }
 
-    p+p {
-        text-align: end;
-        margin-top: 100px;
+    .word {
+        display: flex;
+        flex-direction: row;
         font-size: 110px;
-        font-family: "League Spartan", sans-serif;
+        justify-content: start;
+        vertical-align: top;
+        margin-top: 100px;
+
+        .words {
+            p {
+                margin-left: 30px;
+            }
+        }
+
+        p {
+            margin-left: 10px;
+            text-align: start;
+            font-size: 110px;
+            font-family:var(--ff2);
+        }
     }
 }
 
@@ -502,14 +526,14 @@ body {
 
         h1 {
             font-size: 120px;
-            font-family: "Oxanium", sans-serif;
+            font-family: var(--ff1);
         }
 
         h2 {
-            font-family: "Offside", sans-serif;
+            font-family: var(--ff4);
             position: relative;
-            bottom: 30px;
-            left: 590px;
+            bottom: 40px;
+            left: 620px;
             text-shadow: 0 0 5px cyan, 0 0 10px cyan;
             color: rgb(203, 255, 255);
         }
@@ -522,7 +546,7 @@ body {
         line-height: 100px;
 
         h3 {
-            font-family: "Iceland", sans-serif;
+            font-family: var(--ff5);
             font-size: 80px;
             text-shadow: 0 0 5px orange, 0 0 20px orangered;
         }
@@ -553,7 +577,7 @@ body {
 
         h1 {
             font-size: 120px;
-            font-family: "Oxanium", sans-serif;
+            font-family: var(--ff1);
             background: linear-gradient(75deg, orangered, cyan, rgb(255, 0, 234), orangered);
             background-size: 500% auto;
             -webkit-background-clip: text;
@@ -566,7 +590,7 @@ body {
 
 
     h3 {
-        font-family: "Offside", sans-serif;
+        font-family: var(--ff4);
         position: relative;
         text-shadow: 0 0 5px cyan, 0 0 10px cyan;
         color: rgb(203, 255, 255);
@@ -579,13 +603,13 @@ body {
         margin-top: 100px;
 
         h2 {
-            font-family: "Offside", sans-serif;
+            font-family: var(--ff4);
             font-size: 80px;
             text-shadow: 0 0 5px violet, 0 0 20px darkviolet;
         }
 
         h3 {
-            font-family: "Iceland", sans-serif;
+            font-family: var(--ff5);
             font-size: 80px;
             text-shadow: 0 0 5px orange, 0 0 20px orangered;
             color: white;
@@ -602,8 +626,8 @@ body {
 .slide11 {
     .head {
         h3 {
-            left: 85px;
-            bottom: 30px;
+            left: 55px;
+            bottom: 45px;
         }
     }
 }
@@ -611,8 +635,8 @@ body {
 .slide12 {
     .head {
         h3 {
-            left: 70px;
-            bottom: 30px;
+            left: 280px;
+            bottom: 45px;
         }
     }
 }
@@ -668,56 +692,31 @@ body {
     }
 }
 
-.slide16 {
+.slide14 {
     flex-direction: column;
     justify-content: center;
 
-    /* background: url(); */
-    h1 {
-        font-size: 200px;
-        font-family: "Six Caps", sans-serif;
-        letter-spacing: 30px;
-        font-weight: 300;
+    h1:nth-child(1){
+        font-size: 300px;
+        transform: scaleY(1.5);
+        position: fixed;
+        color: #ff0000;
+        font-family: var(--ff2);
     }
 
-    h3 {
-        font-family: "League Spartan", sans-serif;
-        font-weight: 700;
+    h1:nth-child(2){
+        font-size: 250px;
+        transform: scaleY(0.8);
+        position: fixed;
+        color: #16bffd;
+        font-family: var(--ff13);
+    }
+
+    h1:nth-child(3){
+        font-size: 100px;
+        position: fixed;
+        -webkit-text-stroke: 3px darkblue;
+        color: transparent;
     }
 }
 
-
-
-
-
-/* Slide div styles */
-.bar3,
-.bar5,
-.bar7,
-.bar9,
-.bar11,
-.bar13,
-.bar15,
-.bar17 {
-    background: darkblue;
-    left: -100px;
-    rotate: 70deg;
-}
-
-.bar4,
-.bar6,
-.bar8,
-.bar10,
-.bar12,
-.bar14 {
-    background: rgb(25, 10, 10);
-    right: -100px;
-    rotate: 110deg;
-}
-
-.bar {
-    height: 30px;
-    width: 100vw;
-    display: inline-block;
-    position: relative;
-}
