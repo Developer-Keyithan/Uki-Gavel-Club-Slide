@@ -1,0 +1,33 @@
+* {
+    scroll-behavior: smooth;
+}
+
+.cinema-text {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 200px;
+    font-family: var(--ff1);
+    -webkit-text-stroke: 5px rgb(0, 157, 255);
+    color: transparent;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.cinema-text.animate {
+    animation: waveAnimation 2s ease infinite forwards;
+    color: rgb(0, 157, 255);
+    z-index: 1;
+}
+
+@keyframes waveAnimation {
+    0%, 100% {
+        clip-path: polygon(0% 61%, 8% 56%, 15% 53%, 21% 51%, 27% 50%, 36% 53%, 43% 57%, 
+                           47% 59%, 54% 61%, 63% 64%, 71% 65%, 78% 65%, 86% 64%, 90% 60%, 
+                           96% 55%, 100% 48%, 100% 100%, 0% 100%);
+    }
+    50% {
+        clip-path: polygon(0% 45%, 9% 54%, 18% 57%, 26% 58%, 34% 55%, 43% 52%, 49% 48%, 
+                           57% 44%, 67% 43%, 73% 44%, 81% 46%, 89% 51%, 96% 55%, 100% 58%, 
+                           100% 99%, 0% 99%);
+    }
+}
