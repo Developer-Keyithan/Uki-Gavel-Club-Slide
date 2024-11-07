@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 
-    --ffcomon:Arial, sans-serif;
+    --ffcom:Arial, sans-serif;
     --ffgavel:"Six Caps";
     --ff1:"Poppins";
     --ff2:"League Spartan";
@@ -21,10 +21,10 @@
 
 body {
     margin: 0;
-    font-family: var(--ffcomon);
+    font-family: var(--ffcom);
     overflow: hidden;
     background: linear-gradient(45deg, cyan,darkblue);
-    animation: animate 10s 10s 0 infinite forwards linear;
+    background-size: 200%;
 }
 
 
@@ -58,9 +58,8 @@ body {
     align-items: center;
     font-size: 2em;
     color: white;
-    background-size: 500%;
-    background-color: #0007;
-    backdrop-filter: blur(20px);
+    background-color: #0005;
+    backdrop-filter: blur(200px);
 }
 
 
@@ -97,14 +96,14 @@ body {
         background-position: 0%;
     }
     100% {
-        background-position: 400%;
+        background-position: 200%;
     }
 }
 
 .slide2 {
     flex-direction: column;
     justify-content: center;
-    h1 {
+    /* h1 {
         font-size: 200px;
         font-family: var(--ff1);
         font-weight: 600;
@@ -116,6 +115,29 @@ body {
         -webkit-background-clip: text;
         -webkit-text-stroke: 10px transparent;
         animation: animate 20s linear infinite;
+    } */
+
+    h1 {
+        position: absolute;
+        /* top: 50%; */
+        /* transform: translate(10%, -55%); */
+        text-transform: uppercase;
+        font-size: 200px;
+        font-family: var(--ff1);
+        -webkit-text-stroke: 5px rgb(0, 157, 255);
+        color: transparent;
+        font-weight: 600;
+        padding: 10px;
+    }
+
+    h1:nth-child(1) {
+        color: transparent;
+    }
+
+    h1:nth-child(2) {
+        animation: anime 2s ease infinite forwards;
+        color: rgb(0, 157, 255);
+        z-index: 1;
     }
 
     h3 {
@@ -138,6 +160,16 @@ body {
     }
 
 
+}
+
+@keyframes waveAnimation {
+    0%,
+    100% {
+        clip-path: polygon(0% 61%, 8% 56%, 15% 53%, 21% 51%, 27% 50%, 36% 53%, 43% 57%, 47% 59%, 54% 61%, 63% 64%, 71% 65%, 78% 65%, 86% 64%, 90% 60%, 96% 55%, 100% 48%, 100% 100%, 0% 100%);
+    }
+    50% {
+        clip-path: polygon(0% 45%, 9% 54%, 18% 57%, 26% 58%, 34% 55%, 43% 52%, 49% 48%, 57% 44%, 67% 43%, 73% 44%, 81% 46%, 89% 51%, 96% 55%, 100% 58%, 100% 99%, 0% 99%);
+    }
 }
 
 .slide3 {
@@ -720,3 +752,81 @@ body {
     }
 }
 
+.slide15 {
+    flex-direction: column;
+    justify-content: center;
+
+    .content {
+        z-index: 1;
+        background: #0007;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(20px);
+
+        h1 {
+            font-size: 200px;
+            font-family: var(--ff13);
+            background: linear-gradient(75deg, orangered, cyan, rgb(255, 0, 234), orangered);
+            background-size: 500% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: animatedTextGradient 20s ease infinite;
+            animation-delay: 0ms;
+        }
+    
+        h3 {
+            font-size: 75px;
+            margin-top: -20px;
+            font-family: var(--ff4);
+        }
+    }
+
+    img {
+        position: fixed;
+        z-index: 0;
+        height: auto;
+        width: 100vw;
+        opacity: 0.8;
+    }
+}
+
+.slide17 {
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding-left: 400px;
+
+    h1 {
+        font-size: 150px;
+        font-family: var(--ff3);
+        font-weight: 500;
+
+        background: linear-gradient(45deg, #ffff00, #ff00f3, #66ff00, #16bffd, #ffff00);
+        background-size: 400%;
+        padding: 10px;
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 8px transparent;
+        animation: animate 20s linear infinite;
+    }
+
+    .selections {
+        margin-top: 40px;
+        line-height: 60px;
+        font-family: var(--ff13);
+        font-size: 50px;
+        background: linear-gradient(75deg, orangered, cyan, rgb(255, 0, 234), orangered);
+        background-size: 500% auto;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: animatedTextGradient 20s ease infinite;
+        animation-delay: 0ms;
+
+        .roles {
+            margin-top: 60px;
+        }
+    }
+}
