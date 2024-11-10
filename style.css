@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
 
-    --ffcom:Arial, sans-serif;
-    --ffgavel:"Six Caps";
-    --ff1:"Poppins";
-    --ff2:"League Spartan";
-    --ff3:"Damion";
-    --ff4:"Offside";
-    --ff5:"Iceland";
+    --ffcom: Arial, sans-serif;
+    --ffgavel: "Six Caps";
+    --ff1: "Poppins";
+    --ff2: "League Spartan";
+    --ff3: "Damion";
+    --ff4: "Offside";
+    --ff5: "Iceland";
     --ff6: "Vibur";
     --ff7:"Trade Winds";
     --ff8:"Sriracha";
@@ -152,6 +152,7 @@ body {
     animation: scaleX 5s ease infinite;
 }
 
+
 .theme .bg-slides h1:nth-child(1) {
     color: transparent;
 
@@ -197,10 +198,6 @@ body {
 
 
 
-
-
-
-
 .intro {
     
 }
@@ -228,6 +225,7 @@ body {
     left: 0%;
     z-index: 100;
 }
+
 
 .intro .bg-slides .image img {
     height: 100vh;
@@ -391,8 +389,6 @@ body {
         position: absolute;
         height: 100vh;
         left: -500px;
-    }
-    
 }
 
 
