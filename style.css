@@ -89,7 +89,8 @@ body {
 
 .gavel {
     position: relative;
-    background: url(https://images.pexels.com/photos/3062545/pexels-photo-3062545.jpeg?cs=srgb&dl=pexels-minhle17vn-3062545.jpg&fm=jpg) no-repeat center / cover;
+    background: url(https://cdn.pixabay.com/photo/2016/09/14/08/18/film-1668918_1280.jpg) no-repeat center / cover;
+    /* background: url(https://images.pexels.com/photos/3062545/pexels-photo-3062545.jpeg?cs=srgb&dl=pexels-minhle17vn-3062545.jpg&fm=jpg) no-repeat center / cover; */
 }
 
 .gavel .bg-slides {
@@ -135,7 +136,8 @@ body {
 
 
 .theme {
-    background: url(https://cdn.prod.website-files.com/610c5007d3b7ee36cc3e07c1/63cf933485944e76cb89934d_Production.jpeg) no-repeat center / cover;
+    background: url(https://cdn.celluloidjunkie.com/wp-content/uploads/2019/05/01055724/QSC_Avengers_Endgame-1250x833.jpeg) no-repeat center / cover;
+    /* background: url(https://cdn.prod.website-files.com/610c5007d3b7ee36cc3e07c1/63cf933485944e76cb89934d_Production.jpeg) no-repeat center / cover; */
 }
 
 .theme .bg-slides {
@@ -212,7 +214,7 @@ body {
     height: 100vh;
     overflow: hidden;
     position: absolute;
-    margin-left: 500px;
+    margin-left: 1300px;
 }
 
 .intro .bg-slides .image::before {

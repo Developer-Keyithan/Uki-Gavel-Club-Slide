@@ -2,7 +2,7 @@ let timerInterval;
 let stopwatchInterval;
 let timeRemaining;
 let isTimerRunning = false;
-let isTimerPaused = false;
+let isTimerPaused = true;
 let targetTime;
 let stopwatchTime = 0;
 let stopwatchMillis = 0;
@@ -19,7 +19,7 @@ function start() {
 
     // Disable the Start button, and enable Pause and Stop buttons
     document.getElementById("start-btn").disabled = true;
-    document.getElementById("pause-btn").disabled = false;
+    document.getElementById("pause-btn").disabled = true;
     document.getElementById("stop-btn").disabled = false;
     document.getElementById("reset-btn").disabled = true; // Reset is disabled until paused or stopped
 
@@ -195,6 +195,7 @@ function updateButtonState(state) {
 
         // Switch Pause to Resume button
         pauseBtn.innerText = "Resume";
+        stopBtn.disabled = true;
     } else if (state === "reset") {
         startBtn.style.display = "none";
         pauseBtn.style.display = "inline-block";
