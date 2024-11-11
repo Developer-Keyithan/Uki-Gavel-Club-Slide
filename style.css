@@ -389,6 +389,7 @@ body {
         position: absolute;
         height: 100vh;
         left: -500px;
+    }
 }
 
 
@@ -425,4 +426,22 @@ body {
  } 
  .intro-ah-counter .bg-slides .content .ah-counter h3 {
      left: -100px !important;
+}
+
+
+
+
+
+
+
+.prepare-speakers {
+
+}
+
+.prepare-speakers .bg-slides .speakers h2:nth-child(1) {
+    animation: vibrate 2s ease 0s infinite normal none;
+}
+
+.prepare-speakers .bg-slides .speakers h2:nth-child(2) {
+    animation: vibrate 2s ease 1s infinite normal none;
 }
