@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Image Slider with Fade Background</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="effects.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Iceland&family=League+Spartan:wght@100..900&family=Offside&family=Oxanium:wght@200..800&family=Six+Caps&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Allan:wght@400;700&family=Damion&family=Delius&family=Itim&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sriracha&family=Trade+Winds&family=Vibur&display=swap" rel="stylesheet">    <div id="background-fade" class="background"></div>
@@ -13,247 +15,258 @@
         <div class="slider-container">
             <img class="logo" src="Assets/Uki Logo.png" alt="">
             <div class="slider" id="slider">
-                <div class="slide slide1 session">
-                    <div>
-                        <h1>Gavel Club</h1>
-                        <h3>SESSION 10</h3></div>
-                    </div>
-
-                <div class="slide slide2 theme">
-                    <!-- <img src="https://cdn.socast.io/6616/sites/356/2021/03/29065858/Captain-America-Avengers-Endgame-Movie-Theater.jpg" alt=""> -->
-                    <div>
-                        <h3 class="tt">Today Theme</h3>
-                        <h1>Cinema</h1>
-                        <h1>Cinema</h1>
-                        <!-- <h3 class="sw">The Wonder</h3> -->
-                    </div>
-                </div>
-
-                <div class="slide slide3 intro">
-                    <div class="content">
-                        <h1>Introduction</h1>
-                        <h2>General Evoluation Commitee</h2>
-                    </div>
-                    <div class="img">
-                        <img src="https://pixabay.com/get/g4398dc6e7e7d30146b708f2fbdd3f530cae06173cf27b0941516da8babcae1a7eb03a9b3cc0fcf7dc3577cede66f84bb.jpg" alt="">
-                    </div>
-                </div>
-
-                <div class="slide slide4 intro-ge-gr">
-                    <div class="img">
-                        <img src="https://pixabay.com/get/g7fd08c6b7938d4efd2b4a962202cd1cc7cdb16978058c0a74292ff140a4e4fffe972ba8bcc93a3e79f2320ead14885aa.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="head">
-                            <h1>Introduction</h1>
-                            <h2>General Evoluation Commitee</h2>
+             
+                <div class="slide gavel">
+                    <div class="bg-slides">
+                        <div>
+                            <h1 class="glow-glitch">Gavel Club</h1>
+                            <h3 class="gr-glitch">Session 11</h3>
                         </div>
-                        <div class="role">
-                            <div class="ge">
+                    </div>
+                </div>
+
+
+                <div class="slide theme">
+                    <div class="bg-slides">
+                        <h3>Today Theme</h3>
+                        <h1>CINEMA</h1>
+                        <h1>CINEMA</h1>
+                        <h3>Tag Line</h3>
+                    </div>
+                </div>
+
+
+                <div class="slide intro">
+                    <div class="bg-slides">
+                        <div class="image">
+                            <img src="https://media.licdn.com/dms/image/v2/D4D12AQFjMhYD3o2fwg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1724827551870?e=2147483647&v=beta&t=lNenAJdfZyZuoIzQSpafxeR8M7pHhhTy8xjtCHMbyno">
+                        </div>
+                        <div class="content">
+
+                            <h1>Introduction</h1>
+                            <h2>General Evoluation <br>Commitee</h2>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="slide intro-gramarian">
+                    <div class="bg-slides">
+                        <div class="content">
+                            <div class="heading">
+                                <h1>Introduction</h1>
+                                <h2>General Evoluation <br>Commitee</h2>
+                            </div>
+                            <div class="role general-evoluator">
                                 <h2>General Evoluator</h2>
                                 <h3>Thenakan</h3>
                             </div>
-                            <div class="gr">
+                            <div class="role gramarian">
                                 <h2>Gramarian</h2>
                                 <h3>Abinaya</h3>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="slide slide5 gr">
-                    <div class="slide-view">
-                        <div class="wotd">
-                            <h1>Word of the day</h1>
-                            <h2>"Technical"</h2>
-                        </div>
-                        <div class="pron">
-                            <h3>Pronounciation</h3>
-                            <h4>tek-nuh-kl</h4>
-                        </div>
-                        <div class="mean">
-                            <h3>Meaning</h3>
-                            <h4>Having special and usually practical knowledge especially of a mechanical or scientific subject.</h4>
-                        </div>
-                        <div class="ex">
-                            <h3>Example</h3>
-                            <h4>The technical staff can help you. <br> The article uses a lot of technical terms.</h4>
+                        <div class="image">
+                            <img src="https://media.licdn.com/dms/image/v2/D4E12AQFqXK7RMBMuQw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1727267982741?e=2147483647&v=beta&t=9C5p_5YgCE7zWwLRUKUEwy-DI2sYTRBGDSG4OVGdDUY" alt="">
                         </div>
                     </div>
                 </div>
 
-                <div class="slide slide6 intro-timer">
-                    <div class="img">
-                        <img src="https://pixabay.com/get/g7fd08c6b7938d4efd2b4a962202cd1cc7cdb16978058c0a74292ff140a4e4fffe972ba8bcc93a3e79f2320ead14885aa.jpg" alt="">
+
+                <div class="slide word">
+                    <div class="bg-slides">
+
                     </div>
-                    <div class="content">
-                        <div class="head">
-                            <h1>Introduction</h1>
-                            <h2>General Evoluation Commitee</h2>
-                        </div>
-                        <div class="role">
-                            <div class="ge">
+                </div>
+
+
+                <div class="slide intro-timer">
+                    <div class="bg-slides">
+                        <div class="content">
+                            <div class="heading">
+                                <h1>Introduction</h1>
+                                <h2>General Evoluation <br>Commitee</h2>
+                            </div>
+                            <div class="role general-evoluator">
                                 <h2>General Evoluator</h2>
                                 <h3>Thenakan</h3>
                             </div>
-                            <div class="gr">
+                            <div class="role gramarian">
                                 <h2>Gramarian</h2>
                                 <h3>Abinaya</h3>
                             </div>
-                            <div class="timer">
+                            <div class="role timer">
                                 <h2>Timer</h2>
                                 <h3>Nivethika</h3>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="slide slide7 times">
-                    <div class="content">
-                        <div class="pre-speak">
-                            <h1 class="head">First “Prepare Speakers”</h1>
-                            <h3 class="dur">Total 5 minutes</h3>
-                            <div class="time">
-                                <p>First bell - 2.30 minutes end - Ring one time - <div class="green">Green Card</div></p>
-                                <p>Second bell - 4 minutes end - Ring one time - <div class="yellow">Yellow Card</div></p>
-                                <p>Third bell - Time up - Ring two times - <div class="red">Red Card</div></p>
-                            </div>
-                        </div>
-                        <div class="r-robin">
-                            <h1 class="head">Second “Round Robin”</h1>
-                            <h3 class="dur">Total 1 minutes</h3>
-                            <div class="time">
-                                <p>Third bell - Time up - Ring two times - <div class="red">Red Card</div></p>
-                            </div>
-                        </div>
-                        <div class="t-topic">
-                            <h1 class="head">Third “Table Topic”</h1>
-                            <h3 class="dur">Total 3 minutes</h3>
-                            <div class="time">
-                                <p>First bell - 1.30 minutes end - Ring one time - <div class="green">Green Card</div></p>
-                                <p>Second bell - 2.30 minutes end - Ring one time - <div class="yellow">Yellow Card</div></p>
-                                <p>Third bell - Time up - Ring two times - <div class="red">Red Card</div></p>
-                            </div>
+                        <div class="image">
+                            <img src="https://media.licdn.com/dms/image/v2/D4E12AQFqXK7RMBMuQw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1727267982741?e=2147483647&v=beta&t=9C5p_5YgCE7zWwLRUKUEwy-DI2sYTRBGDSG4OVGdDUY">
                         </div>
                     </div>
                 </div>
 
-                <div class="slide slide8 intro-ah">
-                    <div class="img">
-                        <img src="https://pixabay.com/get/g7fd08c6b7938d4efd2b4a962202cd1cc7cdb16978058c0a74292ff140a4e4fffe972ba8bcc93a3e79f2320ead14885aa.jpg" alt="">
+
+                <div class="slide timing">
+                    <div class="bg-slides">
+
                     </div>
-                    <div class="content">
-                        <div class="head">
-                            <h1>Introduction</h1>
-                            <h2>General Evoluation Commitee</h2>
-                        </div>
-                        <div class="role">
-                            <div class="ge">
+                </div>
+
+
+                <div class="slide intro-ah-counter">
+                    <div class="bg-slides">
+                        <div class="content">
+                            <div class="heading">
+                                <h1>Introduction</h1>
+                                <h2>General Evoluation <br>Commitee</h2>
+                            </div>
+                            <div class="role general-evoluator">
+
                                 <h2>General Evoluator</h2>
                                 <h3>Thenakan</h3>
                             </div>
-                            <div class="gr">
+                            <div class="role gramarian">
                                 <h2>Gramarian</h2>
                                 <h3>Abinaya</h3>
                             </div>
-                            <div class="timer">
+                            <div class="role timer">
                                 <h2>Timer</h2>
                                 <h3>Nivethika</h3>
                             </div>
-                            <div class="ah">
+                            <div class="role ah-counter">
                                 <h2>Ah-Counter</h2>
                                 <h3>Keyithan</h3>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="slide slide9 pws">
-                    <h1 class="s9-head">Counting Piller Words</h1>
-                    <div class="word">
-                        <p>Like:</p> <div class="words"><P>"Ah"</P><p>"Um"</p></div>
-                    </div>
-                </div>
-
-                <div class="slide slide10 ps">
-                    <div class="head">
-                        <h1>Prepare Speakers</h1>
-                        <h2>Listten Carefully</h2>
-                    </div>
-                    <div class="speakers">
-                        <h3>1. Abarna</h3>
-                        <h3>2. Keyithan</h3>
-                    </div>
-                </div>
-
-                <div class="slide slide11 rr">
-                    <div>
-                        <div class="head">
-                            <h1>Round Robin</h1>
-                            <h3>Tell Intersting</h3>
-                        </div>
-                        <div class="master">
-                            <h2>Master</h2>
-                            <h3>Thulakshikan</h3>
+                        <div class="image">
+                            <img src="https://media.licdn.com/dms/image/v2/D4E12AQFqXK7RMBMuQw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1727267982741?e=2147483647&v=beta&t=9C5p_5YgCE7zWwLRUKUEwy-DI2sYTRBGDSG4OVGdDUY">
                         </div>
                     </div>
                 </div>
 
-                <div class="slide slide12 tt">
-                    <div>
-                        <div class="head">
-                            <h1>Tabel Topic</h1>
-                            <h3>Choose One</h3>
+
+                <div class="slide spells">
+                    <div class="bg-slides">
+
+                    </div>
+                </div>
+
+
+                <div class="slide prepare-speakers">
+                    <div class="bg-slides">
+                        <div class="content">
+                            <div class="heading">
+                                <h1>Prepare Speakers</h1>
+                                <h3>Listten Carefully</h3>
+                            </div>
+                            <div class="speakers">
+                                <h2>01. Abarna</h2>
+                                <h2>02. Keyithan</h2>
+                            </div>
                         </div>
-                        <div class="master">
-                            <h2>Master</h2>
-                            <h3>Thanathipan</h3>
+                        <div class="image">
+                            <img src="" alt="">
                         </div>
                     </div>
                 </div>
 
-                <div class="slide slide13 vs">
-                    <h1>Master</h1>
-                    <h2>vs</h2>
-                    <h1 class="gaveliars">Gaveliars</h1>
+
+                <div class="slide tabel-topic">
+                    <div class="bg-slides">
+                        <div class="content">
+                            <div class="heading">
+                                <h1>Tabel Topic</h1>
+                                <h3>Tell Intersting</h3>
+                            </div>
+                            <div class="master">
+                                <h2>Master</h2>
+                                <h2>Thulakshikan</h2>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="" alt="">
+                        </div>
+                    </div>
                 </div>
 
-                <div class="slide slide14 fb">
-                    <div>
+
+                <div class="slide round-robin">
+                    <div class="bg-slides">
+                        <div class="content">
+                            <div class="heading">
+                                <h1>Round Robin</h1>
+                                <h3>Choose One</h3>
+                            </div>
+                            <div class="master">
+                                <h2>Master</h2>
+                                <h2>Thanthipan</h2>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="slide vs">
+                    <div class="bg-slides">
+                        <h1>Master</h1>
+                        <h2>Vs</h2>
+                        <h1>Gaveliars</h1>
+                    </div>
+                </div>
+
+
+                <div class="slide feedback">
+                    <div class="bg-slides">
                         <h1>NOW</h1>
-                        <h1>FEEDBACK</h1>
-                        <h1>TIME</h1>
+                        <h2>FEEDBACK</h2>
+                        <h3>TIME</h3>
                     </div>
                 </div>
 
-                <div class="slide slide15 tg">
-                    <img src="https://cdn.pixabay.com/photo/2024/10/01/03/12/ai-generated-9087076_1280.jpg" alt="">
-                    <div class="content">
+
+                <div class="slide thanks-giving">
+                    <div class="bg-slides">
                         <h1>Thanks Giving</h1>
-                        <h3>Sec: Thanathipan</h3>
+                        <h2>Sec: Thanthipan</h2>
                     </div>
                 </div>
 
-                <div class="slide slide16 session">
-                    <div>
-                        <h1>Gavel Club</h1>
-                        <h3>SESSION 10</h3></div>
+                <div class="slide gavel">
+                    <div class="bg-slides">
+                        <div>
+                            <h1 class="glow-glitch">Gavel Club</h1>
+                            <h3 class="gr-glitch">Session 11</h3>
+                        </div>
                     </div>
                 </div>
 
-                <div class="slide slide17 selection">
-                    <h1>Seclections</h1>
-                    <div class="selections">
-                        <h3>Theme</h3>
-                        <div class="roles">
-                            <h3>Toast Master</h3>
-                            <h3>General Evoluator</h3>
-                            <h3>Gramarian</h3>
-                            <h3>Timer</h3>
-                            <h3>Ah-Counter</h3>
-                            <h3>Prepare Speakers</h3>
-                            <h3>Round Robin Master</h3>
-                            <h3>Tabel Topic Master</h3>
+
+                <div class="slide selections">
+                    <div class="bg-slides">
+                        <div class="content">
+                            <div class="heading">
+                                <h1>Selections</h1>
+                            </div>
+                            <div class="theme">
+                                <h2>Theme</h2>
+                            </div>
+                            <div class="roles">
+                                <h2>Toast Master</h2>
+                                <h2>General Evoluator</h2>
+                                <h2>Gramarian</h2>
+                                <h2>Timer</h2>
+                                <h2>Ah-Counter</h2>
+                                <h2>Prepare Speakers</h2>
+                                <h2>Tabel Topic Master</h2>
+                                <h2>Round Robin Master</h2>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="" alt="">
                         </div>
                     </div>
                 </div>
