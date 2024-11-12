@@ -10,13 +10,15 @@
     --ff4: "Offside";
     --ff5: "Iceland";
     --ff6: "Vibur";
-    --ff7:"Trade Winds";
-    --ff8:"Sriracha";
-    --ff9:"Poiret One";
-    --ff10:"Itim";
-    --ff11:"Delius";
-    --ff12:"Damion";
-    --ff13:"Allan";
+    --ff7: "Trade Winds";
+    --ff8: "Sriracha";
+    --ff9: "Poiret One";
+    --ff10: "Itim";
+    --ff11: "Delius";
+    --ff12: "Damion";
+    --ff13: "Allan";
+    --ff14: "Dynamo W04 Bold Condensed";
+    ;
 
     --grc1: linear-gradient(45deg, cyan, darkblue, cyan);
 
@@ -30,9 +32,9 @@ body {
     margin: 0;
     font-family: var(--ffcom);
     overflow: hidden;
-    background: linear-gradient(45deg, cyan, darkblue, cyan, darkblue, cyan, darkblue, cyan,  darkblue, cyan, darkblue, cyan,  darkblue, cyan, darkblue, cyan);
+    background: linear-gradient(45deg, cyan, darkblue, cyan, darkblue, cyan, darkblue, cyan, darkblue, cyan, darkblue, cyan, darkblue, cyan, darkblue, cyan);
     background-size: 100%;
-    animation: animatedTextGradient 60s ease-in-out infinite forwards;  
+    animation: animatedTextGradient 60s ease-in-out infinite forwards;
 }
 
 
@@ -104,7 +106,7 @@ body {
     align-items: center;
 }
 
-.gavel h1{
+.gavel h1 {
     font-size: var(--h1);
     font-family: var(--ffgavel);
     letter-spacing: 20px;
@@ -112,14 +114,14 @@ body {
     color: rgb(235, 255, 254);
 }
 
-.gavel h3{
+.gavel h3 {
     font-size: 40px;
     text-transform: uppercase;
 
-    background: linear-gradient(45deg, #f06, #4a90e2, #f06);  
-    background-size: 200% 200%;  
-    -webkit-background-clip: text;  
-    color: transparent; 
+    background: linear-gradient(45deg, #f06, #4a90e2, #f06);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 
@@ -164,11 +166,11 @@ body {
     z-index: 1;
     clip-path: polygon(0% 53%, 100% 33%, 100% 100%, 0% 100%);
 
-    background: linear-gradient(45deg, cyan, darkblue, darkviolet, cyan);  
-    background-size: 400%;  
-    -webkit-background-clip: text;  
+    background: linear-gradient(45deg, cyan, darkblue, darkviolet, cyan);
+    background-size: 400%;
+    -webkit-background-clip: text;
     color: transparent;
-    animation: animatedTextGradient 10s ease infinite forwards, scale 5s ease infinite;   
+    animation: animatedTextGradient 10s ease infinite forwards, scale 5s ease infinite;
 }
 
 .theme .bg-slides h3 {
@@ -200,9 +202,7 @@ body {
 
 
 
-.intro {
-    
-}
+.intro {}
 
 .intro .bg-slides {
     background: #000a;
@@ -243,12 +243,12 @@ body {
     width: 100vw;
     height: 100vh;
     z-index: 10;
-    background: linear-gradient(45deg, darkviolet,50%,cyan);
+    background: linear-gradient(45deg, darkviolet, 50%, cyan);
     color: #fff;
 
     clip-path: polygon(0 0%, 40% 0%, 60% 50%, 40% 100%, 0% 100%);
     z-index: 1000;
-    animation:  animatedTextGradient 15s ease infinite forwards;
+    animation: animatedTextGradient 15s ease infinite forwards;
 }
 
 .intro .bg-slides .content h1 {
@@ -263,7 +263,7 @@ body {
     background-size: 400%;
     -webkit-background-clip: text;
     -webkit-text-stroke: 10px transparent;
-    animation:  animatedTextGradient 15s ease infinite forwards;
+    animation: animatedTextGradient 15s ease infinite forwards;
 }
 
 .intro .bg-slides .content h2 {
@@ -279,7 +279,7 @@ body {
     background-size: 400%;
     -webkit-background-clip: text;
     -webkit-text-stroke: 10px transparent;
-    animation:  animatedTextGradient 15s 2s ease infinite forwards;
+    animation: animatedTextGradient 15s 2s ease infinite forwards;
 }
 
 
@@ -298,7 +298,7 @@ body {
     .bg-slides {
         flex-direction: row-reverse;
     }
-    
+
     .bg-slides .content {
         width: 50vw;
         height: 100vh;
@@ -306,27 +306,27 @@ body {
         flex-direction: column;
         justify-content: center;
     }
-    
-    .bg-slides .content .heading{
+
+    .bg-slides .content .heading {
         position: absolute;
         left: 80px;
         z-index: 50;
     }
-    
+
     .bg-slides .content .heading h1 {
         font-size: var(--h2);
         color: #fffc;
         font-family: var(--ff2);
         padding: 30px;
         font-weight: 400;
-    
+
         background: linear-gradient(45deg, cyan, darkviolet, darkblue, #f06, red, yellow, green, cyan);
         background-size: 400%;
         -webkit-background-clip: text;
         -webkit-text-stroke: 10px transparent;
-        animation:  animatedTextGradient 15s ease infinite forwards;
+        animation: animatedTextGradient 15s ease infinite forwards;
     }
-    
+
     .bg-slides .content .heading h2 {
         font-size: 70px;
         color: #fff3;
@@ -334,17 +334,17 @@ body {
         padding: 30px;
         font-weight: 600;
         line-height: 80px;
-    
+
         background: linear-gradient(45deg, cyan, #f06, red, yellow, lightgreen, cyan);
         background-size: 400%;
         -webkit-background-clip: text;
-        animation:  animatedTextGradient 15s ease infinite forwards;
+        animation: animatedTextGradient 15s ease infinite forwards;
     }
 
-    .bg-slides .content .role{
+    .bg-slides .content .role {
         margin-top: 50px;
     }
-    
+
 
     .bg-slides .content .role h2 {
         font-size: 50px;
@@ -355,14 +355,14 @@ body {
         position: relative;
         left: 65px;
         letter-spacing: 5px;
-    
+
         background: linear-gradient(45deg, cyan, #f06, red, yellow, lightgreen, cyan);
         background-size: 400%;
         -webkit-text-stroke: 2px transparent;
         -webkit-background-clip: text;
-        animation:  animatedTextGradient 15s 2s ease infinite forwards;
+        animation: animatedTextGradient 15s 2s ease infinite forwards;
     }
-    
+
     .bg-slides .content .role h3 {
         font-size: var(--h4);
         font-family: var(--ff9);
@@ -371,14 +371,14 @@ body {
         left: 100px;
         letter-spacing: 5px;
     }
-    
+
     .bg-slides .image {
         width: 50vw;
         height: 100vh;
         overflow: hidden;
         position: relative;
     }
-    
+
     .bg-slides .image::after {
         content: '';
         width: 50vw;
@@ -386,7 +386,7 @@ body {
         background: #0009;
         position: absolute;
     }
-    
+
     .bg-slides .image img {
         position: absolute;
         height: 100vh;
@@ -397,37 +397,252 @@ body {
 
 
 .intro-gramarian .bg-slides .content .gramarian {
-   text-align: end;
+    text-align: end;
 }
+
 .intro-gramarian .bg-slides .content .gramarian h2 {
     left: -65px !important;
 }
+
 .intro-gramarian .bg-slides .content .gramarian h3 {
     left: -100px !important;
- }
-
-
-
- .intro-timer .bg-slides .content .timer {
-    text-align: end;
- }
- .intro-timer .bg-slides .content .timer h2 {
-    left: -65px !important;
- } 
- .intro-timer .bg-slides .content .timer h3  {
-     left: -100px !important;
 }
+
+
+
+
+
+
+
+
+.word .bg-slides .content {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.word .bg-slides .content h1 {
+    font-size: 150px;
+    font-family: var(--ff2);
+}
+
+.word .bg-slides .content h3 {
+    font-size: 80px;
+    font-family: var(--ff1);
+}
+
+.word .bg-slides .content h4 {
+    font-size: 45px;
+    width: 60vw;
+    font-family: var(--ff2);
+}
+
+.word .bg-slides .content .pron,
+.word .bg-slides .content .ex {
+    text-align: end;
+    margin-right: 200px;
+    position: relative;
+}
+
+.word .bg-slides .content .pron h4,
+.word .bg-slides .content .ex h4 {
+    position: absolute;
+    right: 0;
+}
+
+.word .bg-slides .content .wotd,
+.word .bg-slides .content .mean {
+    text-align: start;
+    margin-left: 100px;
+}
+
+.word .bg-slides .content .wotd {
+    position: fixed;
+    top: 120px;
+    font-family: var(--ff1);
+}
+
+.word .bg-slides .content .wotd h2 {
+    color: rgb(210, 255, 255);
+    font-size: 120px;
+    text-shadow: 0 0 5px cyan, 0 0 20px cyan, 0 0 50px cyan;
+    padding-left: 80px;
+    margin-top: 20px;
+}
+
+.word .bg-slides .content .pron {
+    margin-top: 250px;
+}
+
+.word .bg-slides .content .mean {
+    margin-left: 200px;
+}
+
+.word .bg-slides .content .ex,
+.word .bg-slides .content .mean {
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.intro-timer .bg-slides .content .timer {
+    text-align: end;
+}
+
+.intro-timer .bg-slides .content .timer h2 {
+    left: -65px !important;
+}
+
+.intro-timer .bg-slides .content .timer h3 {
+    left: -100px !important;
+}
+
+.timing .bg-slides .content h1 {
+    font-family: var(--ff1);
+}
+
+
+
+
+
+
+
+.timing .bg-slides .content {
+    position: absolute;
+    left: 200px;
+    top: 50px;
+}
+
+.timing .bg-slides .content h1 {
+    font-family: var(--ff1);
+    font-size: 60px;
+    margin-top: -10px;
+}
+
+.timing .bg-slides .content h3 {
+    position: relative;
+    left: 100px;
+}
+
+.timing .bg-slides .content .time {
+    margin-top: 20px;
+}
+
+.timing .bg-slides .content p {
+    position: relative;
+    left: 200px;
+    font-family: var(--ff2);
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.timing .bg-slides .content .green {
+    color: rgb(0, 255, 0);
+    position: relative;
+    left: 1082px;
+    bottom: 42px;
+    font-size: 45px;
+    font-family: var(--ff2);
+    font-weight: 600;
+}
+
+.timing .bg-slides .content .yellow {
+    color: yellow;
+    position: relative;
+    left: 1069px;
+    bottom: 42px;
+    font-size: 45px;
+    font-family: var(--ff2);
+    font-weight: 600;
+}
+
+.timing .bg-slides .content .red {
+    color: red;
+    position: relative;
+    left: 934px;
+    bottom: 42px;
+    font-size: 45px;
+    font-family: var(--ff2);
+    font-weight: 600;
+}
+
+.timing .bg-slides .content .t-topic .green {
+    left: 1071px;
+}
+
+.timing .bg-slides .content .t-topic .yellow {
+    left: 1136px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
 .intro-ah-counter .bg-slides .content .ah-counter {
     text-align: end;
- }
- .intro-ah-counter .bg-slides .content .ah-counter h2 {
+}
+
+.intro-ah-counter .bg-slides .content .ah-counter h2 {
     left: -65px !important;
- } 
- .intro-ah-counter .bg-slides .content .ah-counter h3 {
-     left: -100px !important;
+}
+
+.intro-ah-counter .bg-slides .content .ah-counter h3 {
+    left: -100px !important;
+}
+
+
+
+
+.spells .bg-slides .content {
+    font-size: 150px;
+    font-weight: 700;
+    position: absolute;
+    left: 100px;
+    padding: 100px;
+}
+
+.spells .bg-slides .content .s9-head {
+    font-family: var(--ff1);
+    font-size: 150px;
+    line-height: 180px;
+}
+
+.spells .bg-slides .content .word {
+    display: flex;
+    flex-direction: row;
+    font-size: 110px;
+    justify-content: start;
+    vertical-align: top;
+    margin-top: 100px;
+}
+
+.spells .bg-slides .content .word p {
+    margin-left: 10px;
+    text-align: start;
+    font-size: 110px;
+    font-family:var(--ff2);
+}
+
+.spells .bg-slides .content .word .words p {
+    margin-left: 30px;
 }
 
 
@@ -436,25 +651,43 @@ body {
 
 
 
-.prepare-speakers .bg-slides {
- background: #000a;
+
+
+.prepare-speakers .bg-slides,
+.tabel-topic .bg-slides,
+.round-robin .bg-slides {
+    background: #000a;
+    flex-direction: row;
 }
 
-.prepare-speakers .bg-slides .heading h1{
+.prepare-speakers .bg-slides .content .heading,
+.tabel-topic .bg-slides .content .heading,
+.round-robin .bg-slides .content .heading {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+
+.prepare-speakers .bg-slides .content .heading h1,
+.tabel-topic .bg-slides .content .heading h1,
+.round-robin .bg-slides .content .heading h1 {
     font-size: var(--h2);
     font-family: var(--ff8);
     font-weight: 500;
     padding: 10px;
+    color: #fffc;
 
     -webkit-text-stroke: 10px transparent;
     background: linear-gradient(45deg, yellow, cyan, fuchsia, yellow);
     background-size: 400%;
     -webkit-background-clip: text;
-    animation:  animatedTextGradient 15s ease infinite;
+    animation: animatedTextGradient 15s ease infinite;
 }
 
-.prepare-speakers .bg-slides .heading h3{
-    font-size:60px;
+.prepare-speakers .bg-slides .content .heading h3,
+.tabel-topic .bg-slides .content .heading h3,
+.round-robin .bg-slides .content .heading h3 {
+    font-size: 60px;
     font-family: var(--ff8);
     font-weight: 500;
     padding: 10px;
@@ -466,19 +699,146 @@ body {
     /* background: linear-gradient(45deg, yellow, cyan, fuchsia, yellow);
     background-size: 400%;
     -webkit-background-clip: text; */
-    animation:  textShadow 2s ease infinite;
+    animation: textShadowCyan 2s ease infinite;
 }
 
-.prepare-speakers .bg-slides .speakers {
+.prepare-speakers .bg-slides .content .speakers,
+.tabel-topic .bg-slides .content .master,
+.round-robin .bg-slides .content .master {
     display: flex;
     flex-direction: column;
     position: absolute;
+    left: 150px;
+    bottom: 300px;
 }
 
-.prepare-speakers .bg-slides .speakers h2:nth-child(1) {
-    animation: vibrate 2s ease 0s infinite normal none,textShadow 2s ease infinite, scaleX-only 1s 0.5s infinite forwards;
+.prepare-speakers .bg-slides .content .speakers h2,
+.tabel-topic .bg-slides .content .master h2,
+.round-robin .bg-slides .content .master h2 {
+    font-size: 80px;
+    font-family: var(--ff9);
+    font-weight: 600;
+    position: relative;
+    left: 200px;
 }
 
-.prepare-speakers .bg-slides .speakers h2:nth-child(2) {
-    animation: vibrate 2s ease 1s infinite normal none,textShadow 2s ease infinite,scaleX-only 1s infinite forwards;
+.prepare-speakers .bg-slides .content .speakers h2:nth-child(1) {
+    animation: vibrate 2s ease 0s infinite normal none, textShadowRed 1s 0.5s ease infinite, scaleX-only 1s 0.5s infinite forwards;
+}
+
+.prepare-speakers .bg-slides .content .speakers h2:nth-child(2) {
+    margin-top: 30px;
+    left: 300px;
+
+    animation: vibrate 2s ease 1s infinite normal none, textShadowOrange 1s ease infinite, scaleX-only 1s infinite forwards;
+}
+
+.prepare-speakers .bg-slides .image {
+    height: 100vh;
+    width: 50vw;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+.feedback {}
+
+/* .feedback .bg-slides {
+    background: linear-gradient(45deg, cyan, darkblue, cyan, darkblue, cyan, darkblue, cyan,  darkblue, cyan, darkblue, cyan,  darkblue, cyan, darkblue, cyan);
+    background-size: 2000%;
+    height: 40vh;
+    width: 70vw;
+    border-radius: 20px;
+} */
+
+/* .feedback .bg-slides::before {
+    content: '';
+    background: #0009;
+    height: 40vh;
+    width: 70vw;
+    padding: 3px;
+    z-index: -1;
+    position: absolute;
+    border-radius: 22.5px;
+} */
+
+.feedback .bg-slides::after {
+    content: '';
+    background: #0009;
+    height: 20vh;
+    width: 100vw;
+    z-index: 1;
+}
+
+.feedback .bg-slides h1 {
+    font-size: 400px;
+    position: absolute;
+    transform: scaleY(1.3);
+    color: crimson;
+    z-index: 2;
+}
+
+.feedback .bg-slides h2 {
+    font-size: var(--h1);
+    position: absolute;
+    color: rgb(255, 167, 66);
+    /* color: transparent; */
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 20px;
+    -webkit-text-stroke: 10px transparent;
+    z-index: 3;
+
+    background: linear-gradient(45deg, #263fff, #ff2222, #263fff);
+    background-size: 200%;
+    animation: animatedTextGradient 20s linear infinite;
+    -webkit-background-clip: text;
+}
+
+.feedback .bg-slides h3 {
+    font-size: var(--h3);
+    position: absolute;
+    font-family: var(--ff14);
+    /* -webkit-text-stroke: 3px cyan; */
+    letter-spacing: 10px;
+    color: aquamarine;
+    font-weight: 500;
+    z-index: 4;
+}
+
+
+
+
+
+.thanks-giving {
+    background: url(https://cdn.pixabay.com/photo/2024/10/01/03/12/ai-generated-9087076_1280.jpg) no-repeat center / cover;
+}
+
+.thanks-giving .bg-slides {
+    background: #0009;
+    backdrop-filter: blur(10px);
+}
+
+.thanks-giving .bg-slides h1 {
+    font-size: 200px;
+    font-family: var(--ff13);
+    background: linear-gradient(75deg, orangered, cyan, rgb(255, 0, 234), orangered);
+    background-size: 500% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animatedTextGradient 20s ease infinite;
+    animation-delay: 0ms;
+}
+
+.thanks-giving .bg-slides h2 {
+    font-size: 75px;
+    margin-top: -20px;
+    font-family: var(--ff4);
 }
