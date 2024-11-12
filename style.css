@@ -436,14 +436,49 @@ body {
 
 
 
-.prepare-speakers {
+.prepare-speakers .bg-slides {
+ background: #000a;
+}
 
+.prepare-speakers .bg-slides .heading h1{
+    font-size: var(--h2);
+    font-family: var(--ff8);
+    font-weight: 500;
+    padding: 10px;
+
+    -webkit-text-stroke: 10px transparent;
+    background: linear-gradient(45deg, yellow, cyan, fuchsia, yellow);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    animation:  animatedTextGradient 15s ease infinite;
+}
+
+.prepare-speakers .bg-slides .heading h3{
+    font-size:60px;
+    font-family: var(--ff8);
+    font-weight: 500;
+    padding: 10px;
+    position: relative;
+    bottom: 100px;
+    left: 50px;
+    /* color: transparent; */
+
+    /* background: linear-gradient(45deg, yellow, cyan, fuchsia, yellow);
+    background-size: 400%;
+    -webkit-background-clip: text; */
+    animation:  textShadow 2s ease infinite;
+}
+
+.prepare-speakers .bg-slides .speakers {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
 }
 
 .prepare-speakers .bg-slides .speakers h2:nth-child(1) {
-    animation: vibrate 2s ease 0s infinite normal none;
+    animation: vibrate 2s ease 0s infinite normal none,textShadow 2s ease infinite, scaleX-only 1s 0.5s infinite forwards;
 }
 
 .prepare-speakers .bg-slides .speakers h2:nth-child(2) {
-    animation: vibrate 2s ease 1s infinite normal none;
+    animation: vibrate 2s ease 1s infinite normal none,textShadow 2s ease infinite,scaleX-only 1s infinite forwards;
 }
