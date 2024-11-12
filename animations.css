@@ -216,11 +216,11 @@
 
 @keyframes animatedTextGradient {
    0% {
-       background-position: 200% center;
+      background-position: 200% center;
    }
 
    100% {
-       background-position: 0% center;
+      background-position: 0% center;
    }
 }
 
@@ -230,16 +230,37 @@
 
 
 .text-shadow {
-   animation: textShadow 3s ease infinite;
+   animation: textShadowCyan 3s ease infinite;
 }
 
-@keyframes textShadow {
+@keyframes textShadowCyan {
    0%,100% {
       text-shadow: 0 0 10px lightseagreen, 0 0 30px lightseagreen;
    }
 
    50% {
       text-shadow: none;
+   }
+}
+
+
+@keyframes textShadowRed {
+   0%,100% {
+      text-shadow: 0 0 10px orangered, 0 0 30px orangered;
+   }
+
+   50% {
+      text-shadow: 0 0 10px orange, 0 0 30px orange;
+   }
+}
+
+@keyframes textShadowOrange {
+   0%,100% {
+      text-shadow: 0 0 10px orangered, 0 0 30px orangered;
+   }
+
+   50% {
+      text-shadow: 0 0 10px orange, 0 0 30px orange;
    }
 }
 
@@ -270,7 +291,7 @@
 }
 
 .glow-glitch {
-   animation: glitch 2s ease infinite, textShadow 2s ease infinite;
+   animation: glitch 2s ease infinite, textShadowRed 2s ease infinite;
 }
 
 .gr-glitch {
@@ -423,5 +444,26 @@
  
    100% {
     transform: translate(0);
+   }
+ }
+
+
+
+ @keyframes translate {
+   0%,100% {
+      transform: translate(0, 0);
+   }
+   0%,100% {
+      transform: translate (0, 100px);
+   }
+ }
+
+
+
+
+
+ @keyframes bgRotate {
+   100% {
+     transform: rotate(1turn);
    }
  }
