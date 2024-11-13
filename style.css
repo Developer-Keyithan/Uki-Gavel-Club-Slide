@@ -413,7 +413,13 @@ body {
 
 
 
+.word {
+    background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhV2ZuxuZ-vZlOBtrv7479BGX0nSGHKdz1YgwaaPmUm6abt2AqaOH6kH-_g0h3Sqf_9amvmUV-Fsr1P6mZxIOHS75IYaprJJ1d7CkkHznmTx87EMZ9dBnc0Xr8MJ7VUU48JDuRoz_PRBmA/s1600/SS+Music-3782.jpg) no-repeat center / cover;
+}
 
+.word .bg-slides {
+    background: #000d;
+}
 
 .word .bg-slides .content {
     width: 100vw;
