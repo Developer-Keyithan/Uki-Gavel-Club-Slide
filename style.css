@@ -18,6 +18,9 @@
     --ff12: "Damion";
     --ff13: "Allan";
     --ff14: "Dynamo W04 Bold Condensed";
+    --ff15: "Merienda";
+    --ff16: "Rancho";
+    --ff17: "Aladin";
     ;
 
     --grc1: linear-gradient(45deg, cyan, darkblue, cyan);
@@ -91,8 +94,7 @@ body {
 
 .gavel {
     position: relative;
-    background: url(https://cdn.pixabay.com/photo/2016/09/14/08/18/film-1668918_1280.jpg) no-repeat center / cover;
-    /* background: url(https://images.pexels.com/photos/3062545/pexels-photo-3062545.jpeg?cs=srgb&dl=pexels-minhle17vn-3062545.jpg&fm=jpg) no-repeat center / cover; */
+    background: url(https://pixabay.com/get/ge9cb6c15d59105fed5eba4e48a207554d2a666088fa72de23a2f25ae7c760701a1bf95acd614df8d0ff8de3993dcd062.jpg) no-repeat center / cover;
 }
 
 .gavel .bg-slides {
@@ -138,8 +140,7 @@ body {
 
 
 .theme {
-    background: url(https://cdn.celluloidjunkie.com/wp-content/uploads/2019/05/01055724/QSC_Avengers_Endgame-1250x833.jpeg) no-repeat center / cover;
-    /* background: url(https://cdn.prod.website-files.com/610c5007d3b7ee36cc3e07c1/63cf933485944e76cb89934d_Production.jpeg) no-repeat center / cover; */
+    background: url(https://wallpapers.com/images/hd/birthday-celebration-pictures-0l724c0ezrofrnrb.jpg) no-repeat center / cover;
 }
 
 .theme .bg-slides {
@@ -147,25 +148,22 @@ body {
 }
 
 .theme .bg-slides h1 {
-    font-size: 300px;
+    font-size: 200px;
     position: absolute;
     text-transform: uppercase;
-    font-family: var(--ff13);
+    font-family: var(--ff17);
     -webkit-text-stroke: 3px orange;
     font-weight: 600;
     animation: scaleX 5s ease infinite;
-}
-
-
-.theme .bg-slides h1:nth-child(1) {
-    color: transparent;
-
+    letter-spacing: 20px;
 }
 
 .theme .bg-slides h1:nth-child(2) {
     z-index: 1;
-    clip-path: polygon(0% 53%, 100% 33%, 100% 100%, 0% 100%);
-
+    /* clip-path: polygon(0% 53%, 100% 33%, 100% 100%, 0% 100%); */
+    
+    /* background: linear-gradient(45deg, #2549c4, #f89d82); */
+    /* background: linear-gradient(45deg, #265c9f, #173e70, #af1b3d, #da1f3f, #265c9f); */
     background: linear-gradient(45deg, cyan, darkblue, darkviolet, cyan);
     background-size: 400%;
     -webkit-background-clip: text;
@@ -175,7 +173,7 @@ body {
 
 .theme .bg-slides h3 {
     position: relative;
-    font-family: var(--ff2);
+    font-family: var(--ff15);
     font-weight: 500;
     font-size: var(--h4);
     /* -webkit-text-stroke: 2px orange; */
@@ -186,14 +184,22 @@ body {
 
 .theme .bg-slides h3:nth-child(1) {
     bottom: 140px;
-    right: 150px;
+    right: 450px;
 }
 
 .theme .bg-slides h3:nth-child(4) {
     top: 100px;
-    left: 330px;
+    left: 400px;
 }
 
+.theme .images img {
+    width: 30%;
+    position: absolute;
+    bottom: -40px;
+    left: 300px;
+    transform: rotate(-4deg);
+    z-index: 100;
+}
 
 
 
@@ -252,12 +258,13 @@ body {
 }
 
 .intro .bg-slides .content h1 {
-    font-family: var(--ff8);
+    font-family: var(--ff17);
     font-size: var(--h2);
     font-weight: 500;
     letter-spacing: 0px;
     color: #fffc;
     padding: 10px;
+    letter-spacing: 5px;
 
     background: linear-gradient(45deg, cyan, darkviolet, darkblue, #f06, red, yellow, green, cyan);
     background-size: 400%;
@@ -267,7 +274,7 @@ body {
 }
 
 .intro .bg-slides .content h2 {
-    font-family: var(--ff8);
+    font-family: var(--ff15);
     font-size: 80px;
     font-weight: 500;
     letter-spacing: 0px;
@@ -316,7 +323,8 @@ body {
     .bg-slides .content .heading h1 {
         font-size: var(--h2);
         color: #fffc;
-        font-family: var(--ff2);
+        font-family: var(--ff17);
+        letter-spacing: 5px;
         padding: 30px;
         font-weight: 400;
 
@@ -330,7 +338,7 @@ body {
     .bg-slides .content .heading h2 {
         font-size: 70px;
         color: #fff3;
-        font-family: var(--ff2);
+        font-family: var(--ff15);
         padding: 30px;
         font-weight: 600;
         line-height: 80px;
@@ -349,8 +357,8 @@ body {
     .bg-slides .content .role h2 {
         font-size: 50px;
         color: transparent;
-        font-family: var(--ff9);
-        font-weight: 900;
+        font-family: var(--ff17);
+        /* font-weight: 500; */
         zoom: 1.5;
         position: relative;
         left: 65px;
@@ -365,7 +373,7 @@ body {
 
     .bg-slides .content .role h3 {
         font-size: var(--h4);
-        font-family: var(--ff9);
+        font-family: var(--ff16);
         font-weight: bold;
         position: relative;
         left: 100px;
@@ -408,6 +416,28 @@ body {
     left: -100px !important;
 }
 
+.intro-gramarian .bg-slides .image img {
+    left: -200px;
+}
+
+.intro-gramarian .bg-slides > img:nth-child(3) {
+    width: 25%;
+    height: auto;
+    position: absolute;
+    right: 400px;
+    bottom: 50px;
+    z-index: 10;
+}
+
+.intro-gramarian .bg-slides > img:nth-child(4) {
+    position: absolute;
+    width: 25%;
+    height: auto;
+    top: 0;
+    right: 200px;
+    z-index: -1;
+    transform: rotate(30deg);
+}
 
 
 
@@ -421,6 +451,20 @@ body {
     background: #000d;
 }
 
+.slide-for-gramarian {
+    background: url(https://cdn.pixabay.com/photo/2015/09/19/16/19/birthday-947438_1280.jpg) no-repeat center / cover;
+    position: relative;
+}
+
+.slide-for-gramarian::after {
+    content: '';
+    background: #0009;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
 .word .bg-slides .content {
     width: 100vw;
     display: flex;
@@ -430,24 +474,24 @@ body {
 
 .word .bg-slides .content h1 {
     font-size: 150px;
-    font-family: var(--ff2);
+    font-family: var(--ff17);
 }
 
 .word .bg-slides .content h3 {
     font-size: 80px;
-    font-family: var(--ff1);
+    font-family: var(--ff16);
 }
 
 .word .bg-slides .content h4 {
     font-size: 45px;
-    width: 60vw;
-    font-family: var(--ff2);
+    width: 80vw;
+    font-family: var(--ff15);
 }
 
 .word .bg-slides .content .pron,
 .word .bg-slides .content .ex {
     text-align: end;
-    margin-right: 200px;
+    margin-right: 100px;
     position: relative;
 }
 
@@ -465,24 +509,24 @@ body {
 
 .word .bg-slides .content .wotd {
     position: fixed;
-    top: 120px;
-    font-family: var(--ff1);
+    top: 60px;
+    font-family: var(--ff15);
 }
 
 .word .bg-slides .content .wotd h2 {
     color: rgb(210, 255, 255);
-    font-size: 120px;
+    font-size: 100px;
     text-shadow: 0 0 5px cyan, 0 0 20px cyan, 0 0 50px cyan;
     padding-left: 80px;
     margin-top: 20px;
 }
 
 .word .bg-slides .content .pron {
-    margin-top: 250px;
+    margin-top: 100px;
 }
 
 .word .bg-slides .content .mean {
-    margin-left: 200px;
+    margin-left: 100px;
 }
 
 .word .bg-slides .content .ex,
@@ -524,6 +568,23 @@ body {
 
 
 
+.timing {
+    background: url(https://static.vecteezy.com/system/resources/previews/014/457/509/non_2x/new-year-s-countdown-template-free-vector.jpg) no-repeat center / cover;
+    position: relative;
+}
+
+.timing::after {
+    content: '';
+    background: #000d;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
 .timing .bg-slides .content {
     position: absolute;
     left: 200px;
@@ -531,7 +592,9 @@ body {
 }
 
 .timing .bg-slides .content h1 {
-    font-family: var(--ff1);
+    font-family: var(--ff16);
+    letter-spacing: 5px;
+    color: #dd8755;
     font-size: 60px;
     margin-top: -10px;
 }
@@ -539,6 +602,8 @@ body {
 .timing .bg-slides .content h3 {
     position: relative;
     left: 100px;
+    font-family: var(--ff15);
+    color: #ce7ce2;
 }
 
 .timing .bg-slides .content .time {
@@ -551,6 +616,7 @@ body {
     font-family: var(--ff2);
     font-size: 45px;
     font-weight: 600;
+    color: #55ee90;
 }
 
 .timing .bg-slides .content .green {
@@ -614,8 +680,58 @@ body {
     left: -100px !important;
 }
 
+.intro-ah-counter .bg-slides > img {
+    width: 20%;
+    position: absolute;
+}
+
+.intro-ah-counter .bg-slides > img.birthday-girl {
+    display: none;
+    bottom: 50px;
+    right: 500px;
+}
+
+.intro-ah-counter .bg-slides > img.cap {
+    width: 15%;
+    bottom: 250px;
+    right: 200px;
+}
+
+.intro-ah-counter .bg-slides > img.ribbon {
+    top: -50px;
+    right: -50px;
+}
+
+.intro-ah-counter .bg-slides > img.baloon.one {
+    left: 50px;
+    top: 50px;
+}
+
+.intro-ah-counter .bg-slides > img.baloon.two {
+    display: none;
+    left: 650px;
+    bottom: -50px;
+}
 
 
+
+
+
+
+
+.spells {
+    background: url(https://cdn.pixabay.com/photo/2022/11/15/11/31/beer-7593794_1280.jpg) no-repeat center / cover;
+}
+.spells::after {
+    content: '';
+    background: #0009;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 
 .spells .bg-slides .content {
     font-size: 150px;
@@ -626,8 +742,9 @@ body {
 }
 
 .spells .bg-slides .content .s9-head {
-    font-family: var(--ff1);
-    font-size: 150px;
+    font-family: var(--ff16);
+    font-size: 200px;
+    letter-spacing: 10px;
     line-height: 180px;
 }
 
@@ -644,13 +761,41 @@ body {
     margin-left: 10px;
     text-align: start;
     font-size: 110px;
-    font-family:var(--ff2);
+    font-family:var(--ff15);
 }
 
 .spells .bg-slides .content .words .pillers p {
     margin-left: 30px;
 }
 
+.spells .bg-slides .images img {
+    width: 30%;
+    position: absolute;
+}
+
+.spells .bg-slides .images img:first-child {
+    top: 300px;
+    right: 200px;
+}
+
+.spells .bg-slides .images img:nth-child(2) {
+    top: 450px;
+    right: 200px;
+}
+
+.spells .bg-slides .images img:nth-child(3) {
+    width: 10%;
+    bottom: 150px;
+    right: 50px;
+    transform: rotate(-40deg);
+}
+
+.spells .bg-slides .images img:last-child {
+    width: 12%;
+    top: 450px;
+    right: 800px;
+    transform: rotate(10deg);
+}
 
 
 
@@ -678,7 +823,8 @@ body {
 .tabel-topic .bg-slides .content .heading h1,
 .round-robin .bg-slides .content .heading h1 {
     font-size: var(--h2);
-    font-family: var(--ff8);
+    font-family: var(--ff17);
+    letter-spacing: 10px;
     font-weight: 500;
     padding: 10px;
     color: #fffc;
@@ -694,18 +840,30 @@ body {
 .tabel-topic .bg-slides .content .heading h3,
 .round-robin .bg-slides .content .heading h3 {
     font-size: 60px;
-    font-family: var(--ff8);
+    font-family: var(--ff16);
     font-weight: 500;
     padding: 10px;
     position: relative;
-    bottom: 100px;
-    left: 50px;
+    bottom: 60px;
+    /* left: 50px; */
     /* color: transparent; */
 
     /* background: linear-gradient(45deg, yellow, cyan, fuchsia, yellow);
     background-size: 400%;
     -webkit-background-clip: text; */
     animation: textShadowCyan 2s ease infinite;
+}
+
+.prepare-speakers .bg-slides .content .heading h3 {
+    left: 650px;
+}
+
+.tabel-topic .bg-slides .content .heading h3 {
+    left: 220px;
+}
+
+.round-robin .bg-slides .content .heading h3 {
+    left: 100px;
 }
 
 .prepare-speakers .bg-slides .content .speakers,
@@ -722,7 +880,7 @@ body {
 .tabel-topic .bg-slides .content .master h2,
 .round-robin .bg-slides .content .master h2 {
     font-size: 80px;
-    font-family: var(--ff9);
+    font-family: var(--ff15);
     font-weight: 600;
     position: relative;
     left: 200px;
@@ -824,17 +982,18 @@ body {
 
 
 .thanks-giving {
-    background: url(https://cdn.pixabay.com/photo/2024/10/01/03/12/ai-generated-9087076_1280.jpg) no-repeat center / cover;
+    background: url(https://static.wixstatic.com/media/3799c6_1a1765308e0f4b85a11d41fc2c53c3df~mv2.jpg/v1/fill/w_1132,h_594,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3799c6_1a1765308e0f4b85a11d41fc2c53c3df~mv2.jpg) no-repeat center / cover;
 }
 
 .thanks-giving .bg-slides {
     background: #0009;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(2px);
 }
 
 .thanks-giving .bg-slides h1 {
     font-size: 200px;
-    font-family: var(--ff13);
+    font-family: var(--ff17);
+    letter-spacing: 5px;
     background: linear-gradient(75deg, orangered, cyan, rgb(255, 0, 234), orangered);
     background-size: 500% auto;
     -webkit-background-clip: text;
@@ -846,5 +1005,33 @@ body {
 .thanks-giving .bg-slides h2 {
     font-size: 75px;
     margin-top: -20px;
-    font-family: var(--ff4);
+    font-family: var(--ff16);
 }
+
+/* 
+canvas{display:block}
+.wish h1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: "Source Sans Pro";
+  font-size: 5em;
+  font-weight: 900;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.wish h2 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: "Source Sans Pro";
+    font-size: 5em;
+    font-weight: 900;
+    -webkit-user-select: none;
+    user-select: none;
+} */
