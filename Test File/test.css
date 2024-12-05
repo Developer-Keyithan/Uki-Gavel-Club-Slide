@@ -1,0 +1,70 @@
+.for-tabel-topic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.for-tabel-topic .rounds {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.for-tabel-topic .rounds div {
+    height: 200px;
+    width: 800px;
+    border: 3px solid;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.for-tabel-topic .rounds div:nth-child(1) {
+    transform: rotate(60deg);
+    border-color: red;
+    z-index: 100;
+}
+
+.for-tabel-topic .rounds div:nth-child(2) {
+    transform: rotate(120deg);
+    border-color: blue;
+    z-index: 100;
+}
+
+.for-tabel-topic .rounds div:nth-child(3) {
+    border-color: green;
+    z-index: 100;
+}
+
+.for-tabel-topic .dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translate(400px);
+}
+
+.for-tabel-topic .dots div {
+    height: 50px;
+    width: 40px;
+    border: 3px solid;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.for-tabel-topic .dots div:nth-child(1) {
+    transform: rotate(60deg);
+    border-color: red;
+    z-index: 100;
+}
+
+.for-tabel-topic .dots div:nth-child(2) {
+    transform: rotate(120deg);
+    border-color: blue;
+    z-index: 100;
+}
+
+.for-tabel-topic .dots div:nth-child(3) {
+    border-color: green;
+    z-index: 100;
+}
