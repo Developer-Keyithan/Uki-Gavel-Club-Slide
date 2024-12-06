@@ -94,7 +94,7 @@ body {
 
 .gavel {
     position: relative;
-    background: url(https://pixabay.com/get/ge9cb6c15d59105fed5eba4e48a207554d2a666088fa72de23a2f25ae7c760701a1bf95acd614df8d0ff8de3993dcd062.jpg) no-repeat center / cover;
+    background: url(https://pixabay.com/get/g52503c470a5618dc285af17395e9c4ce969ea17f30c4c0facd8a6323dc1e66f5c90d43e1bc43f4b4920069fbfac07ad5.jpg) no-repeat center / cover;
 }
 
 .gavel .bg-slides {
@@ -398,7 +398,7 @@ body {
     .bg-slides .image img {
         position: absolute;
         height: 100vh;
-        left: -500px;
+        left: -300px;
     }
 }
 
@@ -440,13 +440,6 @@ body {
 }
 
 
-
-
-
-.word {
-    background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhV2ZuxuZ-vZlOBtrv7479BGX0nSGHKdz1YgwaaPmUm6abt2AqaOH6kH-_g0h3Sqf_9amvmUV-Fsr1P6mZxIOHS75IYaprJJ1d7CkkHznmTx87EMZ9dBnc0Xr8MJ7VUU48JDuRoz_PRBmA/s1600/SS+Music-3782.jpg) no-repeat center / cover;
-}
-
 .word .bg-slides {
     background: #000d;
 }
@@ -458,7 +451,7 @@ body {
 
 .slide-for-gramarian::after {
     content: '';
-    background: #0009;
+    background: #0001;
     width: 100vw;
     height: 100vh;
     position: absolute;
@@ -743,18 +736,21 @@ body {
 
 .spells .bg-slides .content .s9-head {
     font-family: var(--ff16);
-    font-size: 200px;
+    font-size: 150px;
     letter-spacing: 10px;
     line-height: 180px;
 }
 
+.spells .bg-slides .content .word {
+    display: flex;
+}
+
 .spells .bg-slides .content .words {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     font-size: 110px;
     justify-content: start;
     vertical-align: top;
-    margin-top: 100px;
 }
 
 .spells .bg-slides .content .words p {
@@ -858,8 +854,19 @@ body {
     left: 650px;
 }
 
+.tabel-topic,
+.round-robin,
+.prepare-speakers {
+    background: url(https://cdn.pixabay.com/photo/2018/06/17/10/38/artist-3480274_1280.jpg) no-repeat center / cover;
+}
+
 .tabel-topic .bg-slides .content .heading h3 {
-    left: 220px;
+    left: 100px;
+}
+
+.tabel-topic .bg-slides .content .master h2:nth-child(2),
+.round-robin .bg-slides .content .master h2:nth-child(2) {
+    margin-left: 100px;
 }
 
 .round-robin .bg-slides .content .heading h3 {
