@@ -5,7 +5,7 @@ const deviceRoutes = require('./Routes/methods');
 
 
 const MONGO_URI = "mongodb+srv://sathyjaseelankeyithan:keyithanb2002.12@cluster0.78zte.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-const PORT = 3001;
+const PORT = 3002;
 
 const app = express();
 

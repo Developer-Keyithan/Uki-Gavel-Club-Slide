@@ -94,7 +94,7 @@ body {
 
 .gavel {
     position: relative;
-    background: url(https://pixabay.com/get/g52503c470a5618dc285af17395e9c4ce969ea17f30c4c0facd8a6323dc1e66f5c90d43e1bc43f4b4920069fbfac07ad5.jpg) no-repeat center / cover;
+    background: url(https://cdn.pixabay.com/photo/2017/01/13/09/23/magic-cube-1976725_1280.jpg) no-repeat center / cover;
 }
 
 .gavel .bg-slides {
@@ -140,7 +140,7 @@ body {
 
 
 .theme {
-    background: url(https://wallpapers.com/images/hd/birthday-celebration-pictures-0l724c0ezrofrnrb.jpg) no-repeat center / cover;
+    background: url(https://cdn.pixabay.com/photo/2022/03/20/10/05/skateboarding-7080382_1280.jpg) no-repeat center / cover;
 }
 
 .theme .bg-slides {
@@ -445,7 +445,7 @@ body {
 }
 
 .slide-for-gramarian {
-    background: url(https://cdn.pixabay.com/photo/2015/09/19/16/19/birthday-947438_1280.jpg) no-repeat center / cover;
+    background: url(https://cdn.pixabay.com/photo/2018/02/28/14/55/human-3188185_1280.jpg) no-repeat center / cover;
     position: relative;
 }
 
@@ -562,7 +562,7 @@ body {
 
 
 .timing {
-    background: url(https://static.vecteezy.com/system/resources/previews/014/457/509/non_2x/new-year-s-countdown-template-free-vector.jpg) no-repeat center / cover;
+    /* background: url(https://static.vecteezy.com/system/resources/previews/014/457/509/non_2x/new-year-s-countdown-template-free-vector.jpg) no-repeat center / cover; */
     position: relative;
 }
 
@@ -713,7 +713,7 @@ body {
 
 
 .spells {
-    background: url(https://cdn.pixabay.com/photo/2022/11/15/11/31/beer-7593794_1280.jpg) no-repeat center / cover;
+    background: url(https://cdn.pixabay.com/photo/2015/02/03/16/14/potter-622708_1280.jpg) no-repeat center / cover;
 }
 .spells::after {
     content: '';
