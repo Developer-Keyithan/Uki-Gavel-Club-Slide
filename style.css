@@ -854,10 +854,14 @@ body {
     left: 650px;
 }
 
-.tabel-topic,
-.round-robin,
+.tabel-topic
+{  background: url(https://cdn.pixabay.com/photo/2020/08/15/03/19/billiards-5489526_1280.jpg) no-repeat center / cover;
+}
+.round-robin{
+    background: url(https://cdn.pixabay.com/photo/2020/01/25/10/36/ferris-wheel-4792152_1280.jpg) no-repeat center / cover;
+}
 .prepare-speakers {
-    background: url(https://cdn.pixabay.com/photo/2018/06/17/10/38/artist-3480274_1280.jpg) no-repeat center / cover;
+    background: url(https://cdn.pixabay.com/photo/2016/02/01/21/52/barack-obama-1174489_1280.jpg) no-repeat center / cover;
 }
 
 .tabel-topic .bg-slides .content .heading h3 {
