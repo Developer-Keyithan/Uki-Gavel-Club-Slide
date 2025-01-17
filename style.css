@@ -94,7 +94,7 @@ body {
 
 .gavel {
     position: relative;
-    background: url(https://cdn.pixabay.com/photo/2017/01/13/09/23/magic-cube-1976725_1280.jpg) no-repeat center / cover;
+    background: url(https://pixabay.com/get/g79af136aa052dbd528ebb50ff385b2f58c5a14425a33ce14c34b380f4a106fda57929e181a1f278cc508615f05d71de8.jpg) no-repeat center / cover;
 }
 
 .gavel .bg-slides {
@@ -140,7 +140,7 @@ body {
 
 
 .theme {
-    background: url(https://cdn.pixabay.com/photo/2022/03/20/10/05/skateboarding-7080382_1280.jpg) no-repeat center / cover;
+    background: url(https://www.candorblog.com/wp-content/uploads/2017/05/travel-022.jpg) no-repeat center / cover;
 }
 
 .theme .bg-slides {
@@ -148,7 +148,8 @@ body {
 }
 
 .theme .bg-slides h1 {
-    font-size: 200px;
+    text-align: center;
+    font-size: 240px;
     position: absolute;
     text-transform: uppercase;
     font-family: var(--ff17);
@@ -445,7 +446,7 @@ body {
 }
 
 .slide-for-gramarian {
-    background: url(https://cdn.pixabay.com/photo/2018/02/28/14/55/human-3188185_1280.jpg) no-repeat center / cover;
+    background: url(https://pixabay.com/get/g7317d39694e52a61ee93323b09587d7e6dccf946585f4b4a64a9184063aad1d8079de411ca5bcbba3bf3ff80c2ee0e43.jpg) no-repeat center / cover;
     position: relative;
 }
 
@@ -562,7 +563,7 @@ body {
 
 
 .timing {
-    /* background: url(https://static.vecteezy.com/system/resources/previews/014/457/509/non_2x/new-year-s-countdown-template-free-vector.jpg) no-repeat center / cover; */
+    background: url(https://pixabay.com/get/g561813142f69b4be5da7fdc4d40ce03d3c85a60a10f4d2705850b0a74b609bc605ffe851202d96d907e595a987869f40.jpg) no-repeat center / cover;
     position: relative;
 }
 
@@ -713,7 +714,7 @@ body {
 
 
 .spells {
-    background: url(https://cdn.pixabay.com/photo/2015/02/03/16/14/potter-622708_1280.jpg) no-repeat center / cover;
+    background: url(https://pixabay.com/get/g9cb111f4688a930d293a4f3796552de7fb5866f3bca46e212eb1dcc025e7e392a2b89a3dfa610318377d4248dd05d200.jpg) no-repeat center / cover;
 }
 .spells::after {
     content: '';
@@ -855,13 +856,13 @@ body {
 }
 
 .tabel-topic
-{  background: url(https://cdn.pixabay.com/photo/2020/08/15/03/19/billiards-5489526_1280.jpg) no-repeat center / cover;
+{  background: url(https://pixabay.com/get/g26d2d8b6ead0e61a7f487e881bd17005ccfa23046bd5cccda145b8a935b8911ab1d469b5555f2c20842331e8cef70606.jpg) no-repeat center / cover;
 }
 .round-robin{
-    background: url(https://cdn.pixabay.com/photo/2020/01/25/10/36/ferris-wheel-4792152_1280.jpg) no-repeat center / cover;
+    background: url(https://pixabay.com/get/g47b5a52ea6bfc412f38b59d6fe57c1c21e92d7a35cfcabf2fb78b3dd234f618fcce7bde1468364152e106a22c7867a64.jpg) no-repeat center / cover;
 }
 .prepare-speakers {
-    background: url(https://cdn.pixabay.com/photo/2016/02/01/21/52/barack-obama-1174489_1280.jpg) no-repeat center / cover;
+    background: url(https://pixabay.com/get/g47b5a52ea6bfc412f38b59d6fe57c1c21e92d7a35cfcabf2fb78b3dd234f618fcce7bde1468364152e106a22c7867a64.jpg) no-repeat center / cover;
 }
 
 .tabel-topic .bg-slides .content .heading h3 {
