@@ -1,5 +1,5 @@
 // Define the API URL
-const apiUrl = 'http://localhost:3001/api/admin';
+const apiUrl = 'http://localhost:3002/api/admin';
 
 // Fetch the latest player data when the page loads
 window.onload = () => {
@@ -21,10 +21,10 @@ async function fetchLatestPlayerData() {
         document.getElementById('generalEvaluatorCellOne').textContent = latestPlayer.general_evoluator;
         document.getElementById('grammarianCellOne').textContent = latestPlayer.gramarian;
 
-        document.getElementById('wordOfTheDayCell').textContent = latestPlayer.word_of_the_day;
-        document.getElementById('pronounciationCell').textContent = latestPlayer.pronounciation;
-        document.getElementById('meaningCell').textContent = latestPlayer.meaning;
-        document.getElementById('exampleCell').textContent = latestPlayer.example;
+        // document.getElementById('wordOfTheDayCell').textContent = latestPlayer.word_of_the_day;
+        // document.getElementById('pronounciationCell').textContent = latestPlayer.pronounciation;
+        // document.getElementById('meaningCell').textContent = latestPlayer.meaning;
+        // document.getElementById('exampleCell').textContent = latestPlayer.example;
 
 
         document.getElementById('generalEvaluatorCellTwo').textContent = latestPlayer.general_evoluator;
